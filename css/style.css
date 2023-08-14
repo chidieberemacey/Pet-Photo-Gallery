@@ -1,0 +1,142 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #0a0a23;
+  color: #fff;
+  border-bottom: 4px solid #fdb347;
+}
+
+.header img{
+  border-radius: 90%;
+  width: 50px;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.button{
+  border: 1px solid #0a0a23;
+  padding: 5px 12px;
+  border-radius: 5px;
+  width: 70px;
+}
+
+.button:hover{
+  background-color: #fdb347;
+  cursor: pointer;
+}
+
+.last img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.808);
+}
+
+.text{
+  text-align: center;
+  width: 30%;
+  margin: 5% auto 10px;
+}
+
+.text span{
+  color: #fdb347;
+}
+
+.slider{
+  display: flex;
+  width: 400px;
+  overflow-x: scroll;
+}
+
+.slider div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.slider div img{
+  width: 100%;
+  /* filter: grayscale(50%); */
+  transition: transform(0.5s);
+  border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar{
+  display: none;
+}
+
+.sliderWrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+.slider div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
